@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'
+import resume from '../assets/resume-1.pdf'
 function Mynavbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -35,7 +36,7 @@ function Mynavbar() {
                     <li className='text-xl hover:text-custom-green duration-200'><a href="#projects">Projects</a></li>
                     <li className='text-xl hover:text-custom-green duration-200'><a href="#skills">Skills</a></li>
                     <li className='text-xl hover:text-custom-green duration-200'><a href="#contact">Contact</a></li>
-                    <li className='text-xl'><button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold">Download CV</button></li>
+                    <li className='text-xl'><button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold"><a href={resume} download="resume1.pdf">Download CV</a></button></li>
                       
                 </ul>
 
@@ -44,7 +45,7 @@ function Mynavbar() {
             </nav>
 
             {/* for mobile */}
-            <div className='w-screen h-20 bg-blue-950 text-white flex justify-between items-center md:w-[80vw] lg:hidden px-3 bg-transparent backdrop-blur-sm fixed top-0'>
+            <div className='w-screen h-20 bg-blue-950 text-white flex justify-between items-center md:w-[80vw] lg:hidden px-3 bg-transparent backdrop-blur-sm fixed top-0 z-20'>
 
                 <div className="logo uppercase font-bold text-custom-green">
                     &lt;logo/&gt;
@@ -52,7 +53,7 @@ function Mynavbar() {
 
                 <div className='flex gap-5 md:gap-10 items-center justify-center'>
                     <div>
-                    <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold">Download CV</button>
+                    <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold"><a href={resume} download="resume1.pdf">Download CV</a></button>
                     </div>
                     <div>
                     <button onClick={handleHamClick}><img className='size-9 pt-2 bg-blue-950' src="./Hamburger.png" alt="Hamburger" /></button>
@@ -63,14 +64,14 @@ function Mynavbar() {
             </div>
             {
                 isMenuOpen && (
-                    <div className='fixed top-16 left-0 h-[80vh] p-2 w-screen bg-transparent flex flex-col justify-center md:justify-start items-center gap-6 backdrop-blur-sm pt-5'>
+                    <div className='fixed top-16 left-0 h-screen p-2 w-screen bg-transparent flex flex-col justify-center md:justify-center items-center gap-6 backdrop-blur-sm pt-5 z-30'>
                         {arr.map((item, index) => (
-                            <div className='text-lg text-white' onClick={handleHamClick} key={index}>
+                            <div className='text-lg text-white font-bold' onClick={handleHamClick} key={index}>
                                 <a href={item.path}>{item.text}</a>
                             </div>
                         ))}
                         <div>
-                            <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold">Download CV</button>
+                            <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold"><a href={resume} download="resume1.pdf">Download CV</a></button>
                         </div>
 
                         

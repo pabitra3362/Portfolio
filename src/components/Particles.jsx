@@ -100,24 +100,22 @@ const ParticlesComponent = (props) => {
 
 
     return (
-        <div id="top" className="h-[100vh] relative lg:z-10 -z-10">
-            <div className="text grid lg:flex justify-center gap-10 md:gap-1 pt-20 items-center h-screen w-full lg:w-[60vw] mx-auto lg:pt-10">
+        <div id="top" className="h-[100vh] relative lg:z-10 z-10">
+            <div className="text grid lg:flex justify-center lg:justify-between gap-10 md:gap-1 pt-20 items-center h-screen w-full lg:w-[60vw] mx-auto lg:pt-10">
                 <div className="lg:w-[46%] lg:flex lg:flex-col text-center lg:text-start grid gap-4 ">
                     <p className="text-xl md:text-3xl lg:text-2xl text-custom-green uppercase font-semibold ">hello i'm</p>
-                    <p className="text-[45px] md:text-[70px] text-white font-bold lg:text-[5vw]">Pabitra Mohanty</p>
+                    <p className="text-[42px] md:text-[70px] text-white font-bold lg:text-[5vw]">Pabitra Mohanty</p>
                     <div className="grid gap-4 lg:flex lg:gap-3 justify-center lg:justify-start items-center ">
                     <p className="text-3xl md:text-5xl lg:text-2xl text-white font-bold">A Passionate</p>
                     <div><Typo /></div>
                     </div>
-                    <div className="hidden md:hidden lg:block lg:relative lg:z-50">
-                    <button className="px-8 absolute py-3 bg-custom-green text-black font-bold rounded-md scale-100 hover:scale-110 transition "><a href="#contact">Say Hello</a></button>
-                    </div>
-                    
-                    {/* yahan se baaki */}
+                    <div className="  lg:z-50">
+                    <button className="px-8  py-3 bg-custom-green text-black font-bold rounded-md scale-100 hover:scale-110 transition duration-300 "><a href="#contact">Say Hello</a></button>
+                    </div>    
                           
                 </div>
 
-                <div className="image h-96 w-80 md:w-fit border-2 border-custom-green overflow-hidden rounded-full mx-auto bg-transparent backdrop-blur-sm">
+                <div className="image h-96 w-80  md:w-fit border-2 border-custom-green overflow-hidden rounded-full mx-auto lg:mx-0 bg-transparent backdrop-blur-sm">
                     <img src={myimage} alt="my image" />
                 </div>
 
