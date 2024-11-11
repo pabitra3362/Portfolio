@@ -115,11 +115,14 @@ const ParticlesComponent = (props) => {
                           
                 </div>
 
-                <div className="image h-96 w-80  md:w-fit border-2 border-custom-green overflow-hidden rounded-full mx-auto lg:mx-0 bg-transparent backdrop-blur-sm">
+                
+               
+                <div className="image h-96 w-80  md:w-fit border-2 border-custom-green overflow-hidden rounded-full mx-auto lg:mx-0 bg-transparent backdrop-blur-sm ">
                     <img src={myimage} alt="my image" />
                 </div>
+                </div>
 
-            </div>
+           
 
             <Particles id={props.id} init={particlesLoaded} options={options} />;
 
