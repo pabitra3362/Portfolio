@@ -1,8 +1,9 @@
 import React from 'react'
 import ParticlesComponent from '../components/Particles'
 import CardTilt from '../components/CardTilt'
-import AboutTilt from '../components/AboutTilt/AboutTilt'
-import Section from '../components/Temp'
+import AboutTilt from '../components/AboutTilt'
+import InfineScrollText from '../components/InfineScrollText'
+import { ProjectsHover } from '../components/ProjectsHover'
 
 const Home = () => {
 
@@ -38,8 +39,10 @@ const Home = () => {
 
   return (
     <div>
-      <div className="home">
+      <div className="home bg-slate-900">
+        <div className="particles">
         <ParticlesComponent />
+        </div>
 
         <div className='cards bg-slate-900'>
           <div className="cards grid grid-cols-1 md:grid-cols-2 lg:flex w-full md:w-[80vw] lg:w-fit mx-auto">
@@ -58,12 +61,28 @@ const Home = () => {
           <AboutTilt />
         </div>
 
-          <Section>
-            <div className='w-fit mx-auto'>
+        <div className="scrollingtext text-white bg-slate-900 py-5">
+            <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
 
-            hi bro
-            </div>
-          </Section>
+            <InfineScrollText animate={"animate-scrollRight"} text={"Let's Work Together. I Am Open For New Projects * "} />
+        </div>
+
+
+          {/* projects */}
+
+        <div
+        id='projects'
+        className="projects grid justify-center items-center gap-5">
+          <h2 className='text-custom-green font-bold uppercase text-center my-2 tracking-[0.5rem] lg:text-2xl'>portfolio</h2>
+          <h1
+          className='text-white text-2xl lg:text-4xl text-center tracking-[0.25rem]'
+          >My Projects</h1>
+          <div className=' md:w-[80vw] lg:w-[60vw]'>
+            <ProjectsHover />
+          </div>
+        </div>
+
+         
         
       </div>
     </div>

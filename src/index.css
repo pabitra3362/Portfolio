@@ -5,3 +5,43 @@
 :root{
     scroll-behavior: smooth;
 }
+
+.hollow-text-stroke {
+    -webkit-text-stroke: 2px rgba(49, 245, 26, 0.98);  /* Stroke the text with a 2px black outline */
+    color: transparent;               /* Make the text itself transparent */
+  }
+
+@keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+@keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @layer utilities {
+    .animate-scrollLeft {
+      animation: scroll-left 40s linear infinite;
+    }
+    .animate-scrollRight {
+        animation: scroll-right 60s linear infinite;
+    }
+  }
+
+  
