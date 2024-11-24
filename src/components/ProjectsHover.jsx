@@ -7,7 +7,7 @@ import ecommerceImage from "../assets/ecommerce.png";
 
 export const ProjectsHover = () => {
   return (
-    <section className="bg-neutral-950 p-4 md:p-8">
+    <section className="bg-neutral-950 p-4 md:p-8 w-80 md:w-full">
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Chatify"
@@ -81,7 +81,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             staggerChildren: 0.075,
             delayChildren: 0.25,
           }}
-          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50 md:text-6xl"
+          className="relative z-10 block text-4xl font-bold text-neutral-500 transition-colors duration-500 group-hover:text-custom-green md:text-6xl"
         >
           {heading.split("").map((l, i) => (
             <motion.span
@@ -97,7 +97,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
             </motion.span>
           ))}
         </motion.span>
-        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-neutral-50">
+        <span className="relative z-10 mt-2 block text-base text-neutral-500 transition-colors duration-500 group-hover:text-custom-green">
           {subheading}
         </span>
       </div>
@@ -133,7 +133,7 @@ const Link = ({ heading, imgSrc, subheading, href }) => {
         transition={{ type: "spring" }}
         className="relative z-10 p-4"
       >
-        <FiArrowRight className="text-5xl text-neutral-50" />
+        <FiArrowRight className="text-5xl text-custom-green" />
       </motion.div>
     </motion.a>
   );

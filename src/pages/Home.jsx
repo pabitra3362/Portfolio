@@ -4,6 +4,8 @@ import CardTilt from '../components/CardTilt'
 import AboutTilt from '../components/AboutTilt'
 import InfineScrollText from '../components/InfineScrollText'
 import { ProjectsHover } from '../components/ProjectsHover'
+import Education from '../components/Education'
+import Skill from '../components/Skill'
 
 const Home = () => {
 
@@ -60,6 +62,7 @@ const Home = () => {
         <div id="about" className='bg-slate-900 w-full'>
           <AboutTilt />
         </div>
+          
 
         <div className="scrollingtext text-white bg-slate-900 py-5">
             <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
@@ -70,7 +73,7 @@ const Home = () => {
 
           {/* projects */}
 
-        <div
+          <div
         id='projects'
         className="projects grid justify-center items-center gap-5">
           <h2 className='text-custom-green font-bold uppercase text-center my-2 tracking-[0.5rem] lg:text-2xl'>portfolio</h2>
@@ -81,6 +84,29 @@ const Home = () => {
             <ProjectsHover />
           </div>
         </div>
+
+        {/* Education */}
+
+        <div className='py-12'>
+        <Education />
+        </div>
+
+
+        <div className="scrollingtext text-white bg-slate-900 py-5">
+            <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
+
+            <InfineScrollText animate={"animate-scrollRight"} text={"Let's Work Together. I Am Open For New Projects * "} />
+        </div>
+
+
+        {/* skills */}
+
+        <div id='skills' className="skill">
+          <Skill />
+        </div>
+
+
+
 
          
         

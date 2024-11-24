@@ -5,6 +5,3 @@ https://thames-demo-nuxt.vercel.app/index-1
 
 hover.dev
 
-
-
-
