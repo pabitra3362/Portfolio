@@ -21,6 +21,8 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-around items-center md:gap-3 px-3'>
+
+        <a href="https://www.facebook.com/pabitra.mohanty.169067?mibextid=ZbWKwL" target='_blank'>
         <lord-icon
           src="https://cdn.lordicon.com/ktgglpbq.json"
           trigger="loop"
@@ -29,6 +31,9 @@ const Footer = () => {
           colors="primary:#30e849,secondary:#30e849"
           style={{ "width": "35px", "height": "35px" }}>
         </lord-icon>
+        </a>
+        
+        <a href="https://www.instagram.com/pabitra_m3022/" target='_blank'>
         <lord-icon
           src="https://cdn.lordicon.com/ewswvzmw.json"
           trigger="loop"
@@ -37,6 +42,9 @@ const Footer = () => {
           colors="primary:#30e849,secondary:#30e849"
           style={{ "width": "35px", "height": "35px" }}>
         </lord-icon>
+        </a>
+        
+        <a href="https://x.com/Pabitra3022" target='_blank'>
         <lord-icon
           src="https://cdn.lordicon.com/cbxaxfqs.json"
           trigger="loop"
@@ -45,6 +53,7 @@ const Footer = () => {
           colors="primary:#30e849,secondary:#30e849"
           style={{ "width": "35px", "height": "35px" }}>
         </lord-icon>
+        </a>
 
       </div>
     </div>
