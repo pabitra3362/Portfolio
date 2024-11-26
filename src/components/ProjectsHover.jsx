@@ -7,7 +7,7 @@ import ecommerceImage from "../assets/ecommerce.png";
 
 export const ProjectsHover = () => {
   return (
-    <section className="bg-neutral-950 p-4 md:p-8 w-80 md:w-full">
+    <section className="bg-neutral-950 p-4 md:p-8 w-80 md:w-full rounded-lg">
       <div className="mx-auto max-w-5xl">
         <Link
           heading="Chatify"

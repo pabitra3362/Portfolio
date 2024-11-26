@@ -1,13 +1,9 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt';
 import image from '../assets/without-background.png'
-import { inView, useInView } from "motion/react"
-import { useRef } from 'react';
+import {motion} from 'motion/react'
 
 const AboutTilt = () => {
-
-  const ref = useRef(null)
-  const isInView = useInView(ref,{once:true})
 
   const aboutArr = [
     {
@@ -36,44 +32,50 @@ const AboutTilt = () => {
     },
   ]
   return (
-    <div id='about' className='About-Tilt bg-slate-900 py-16 px-2 lg:w-[60vw] lg:mx-auto grid lg:grid-cols-2 lg:gap-0 justify-start items-center gap-4'>
-      <div>
+    <motion.div id='about' className='About-Tilt bg-[#e7e4da] py-16 px-2 lg:w-[70vw] lg:mx-auto grid lg:grid-cols-2 lg:gap-0 justify-start items-center gap-4'>
+      <motion.div>
         <Tilt>
-          <div className='flex justify-center lg:justify-start items-center'>
-            <div ref={ref} className={`card h-96 w-80 bg-cyan-500 p-4  ${isInView ? "animate__animated animate__fadeInLeftBig" : ""} text-black overflow-hidden hover:shadow-cyan`}>
+          <motion.div className='flex justify-center lg:justify-start items-center'
+          whileInView={{
+            opacity:[0,1],
+            x:[-100,0],
+            transition:{duration:1}
+          }}
+          >
+            <motion.div className={`card h-96 w-80 bg-cyan-500 p-4`}>
               <img className='rounded-lg' src={image} alt="my image" />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </Tilt>
-      </div>
-      <div className='text mt-7 px-3 grid justify-start items-center gap-4'>
+      </motion.div>
+      <motion.div className='text mt-7 px-3 grid justify-start items-center gap-4'>
         <h2 className='uppercase text-custom-green font-bold text-2xl'>About me</h2>
-        <p className='text-3xl text-white font-bold font-serif'>I Develop System That Works</p>
-        <p className='text-lg text-white'> I'm Pabitra Mohanty, a web developer passionate about building responsive, user-friendly websites. With experience in both front-end and back-end development, I focus on creating high-quality, efficient web applications. I enjoy learning new technologies and staying up-to-date with industry trends to deliver cutting-edge solutions. Let's work together to bring your ideas to life!</p>
-        <div className='bg-white opacity-40 h-[1px] w-full'></div>
+        <p className='text-3xl text-black font-bold font-serif'>I Develop System That Works</p>
+        <p className='text-lg text-black'> I'm Pabitra Mohanty, a web developer passionate about building responsive, user-friendly websites. With experience in both front-end and back-end development, I focus on creating high-quality, efficient web applications. I enjoy learning new technologies and staying up-to-date with industry trends to deliver cutting-edge solutions. Let's work together to bring your ideas to life!</p>
+        <motion.div className='bg-white opacity-40 h-[1px] w-full'></motion.div>
 
-        <div className='grid md:grid-cols-2 md:gap-x-16 justify-start items-center gap-3 px-1 text-white'>
+        <motion.div className='grid md:grid-cols-2 md:gap-x-16 justify-start items-center gap-3 px-1 text-black'>
 
           {aboutArr.map((item, index) => (
-            <div key={index} className='grid grid-cols-2 justify-start items-center '>
-              <div className={`${item.key} font-bold`}>
+            <motion.div key={index} className='grid grid-cols-2 justify-start items-center '>
+              <motion.div className={`${item.key} font-bold`}>
                 {item.key}
-              </div>
-              <div className='overflow-x-scroll'>
+              </motion.div>
+              <motion.div className='overflow-x-scroll'>
                 {item.value}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
           ))}
 
 
-        </div>
-        <div className='bg-white opacity-40 h-[1px]  w-full'></div>
-      </div>
+        </motion.div>
+        <motion.div className='bg-white opacity-40 h-[1px]  w-full'></motion.div>
+      </motion.div>
 
 
 
-    </div>
+    </motion.div>
   )
 }
 

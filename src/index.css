@@ -7,7 +7,7 @@
 }
 
 .hollow-text-stroke {
-    -webkit-text-stroke: 2px rgba(49, 245, 26, 0.98);  /* Stroke the text with a 2px black outline */
+    -webkit-text-stroke: 2px black;  /* Stroke the text with a 2px black outline */
     color: transparent;               /* Make the text itself transparent */
   }
 

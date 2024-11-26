@@ -6,6 +6,9 @@ import InfineScrollText from '../components/InfineScrollText'
 import { ProjectsHover } from '../components/ProjectsHover'
 import Education from '../components/Education'
 import Skill from '../components/Skill'
+import ServiceCard from '../components/ServiceCard'
+import Services from '../components/Services'
+import Contact from '../components/Contact'
 
 const Home = () => {
 
@@ -41,12 +44,12 @@ const Home = () => {
 
   return (
     <div>
-      <div className="home bg-slate-900">
+      <div className="home bg bg-slate-900">
         <div className="particles">
         <ParticlesComponent />
         </div>
 
-        <div className='cards bg-slate-900'>
+        <div className='cards bg-slate-900 py-48'>
           <div className="cards grid grid-cols-1 md:grid-cols-2 lg:flex w-full md:w-[80vw] lg:w-fit mx-auto">
             {
               ArrOfCards.map((card, index) => (
@@ -59,12 +62,12 @@ const Home = () => {
 
         {/* About Me */}
 
-        <div id="about" className='bg-slate-900 w-full'>
+        <div id="about" className='bg-[#e7e4da] w-full py-12 lg:py-48'>
           <AboutTilt />
         </div>
           
 
-        <div className="scrollingtext text-white bg-slate-900 py-5">
+        <div className="scrollingtext text-black bg-[#e7e4da] py-5 lg:py-10">
             <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
 
             <InfineScrollText animate={"animate-scrollRight"} text={"Let's Work Together. I Am Open For New Projects * "} />
@@ -75,24 +78,24 @@ const Home = () => {
 
           <div
         id='projects'
-        className="projects grid justify-center items-center gap-5">
+        className="projects grid justify-center items-center gap-5 py-12 lg:py-48">
           <h2 className='text-custom-green font-bold uppercase text-center my-2 tracking-[0.5rem] lg:text-2xl'>portfolio</h2>
           <h1
           className='text-white text-2xl lg:text-4xl text-center tracking-[0.25rem]'
           >My Projects</h1>
-          <div className=' md:w-[80vw] lg:w-[60vw]'>
+          <div className=' md:w-[80vw] lg:w-[70vw]'>
             <ProjectsHover />
           </div>
         </div>
 
         {/* Education */}
 
-        <div className='py-12'>
+        <div className='py-12 lg:py-48 bg-[#e7e4da]'>
         <Education />
         </div>
 
 
-        <div className="scrollingtext text-white bg-slate-900 py-5">
+        <div className="scrollingtext text-black bg-[#e7e4da] py-10">
             <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
 
             <InfineScrollText animate={"animate-scrollRight"} text={"Let's Work Together. I Am Open For New Projects * "} />
@@ -101,11 +104,23 @@ const Home = () => {
 
         {/* skills */}
 
-        <div id='skills' className="skill">
+        <div id='skills' className="skill py-12 lg:py-44">
           <Skill />
         </div>
 
 
+        {/* Service */}
+        <div className="service bg-[#e7e4da] py-5 lg:py-40">
+            <Services />
+        </div>
+
+        <div  className='h-1 w-full bg-custom-green mx-auto'></div>
+
+        
+        {/* Contact */}
+        <div id="contact" className='contact bg-slate-900'>
+          <Contact />
+        </div>
 
 
          

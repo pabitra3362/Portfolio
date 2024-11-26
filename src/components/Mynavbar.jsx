@@ -24,7 +24,7 @@ function Mynavbar() {
         <>
         <div className='bg-blue-950 flex justify-center'>
 
-            <nav className="bg-blue-950 h-20 hidden md:hidden lg:flex justify-between items-center px-3 lg:w-[60vw] mx-auto fixed top-0 bg-transparent backdrop-blur-sm z-50">
+            <nav className="bg-blue-950 h-20 hidden md:hidden lg:flex justify-between items-center px-3 lg:w-[70vw] mx-auto fixed top-0 bg-transparent backdrop-blur-sm z-50">
 
                 <div className="uppercase text-custom-green font-bold ">
                     &lt;logo/&gt;

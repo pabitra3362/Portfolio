@@ -101,7 +101,7 @@ const ParticlesComponent = (props) => {
 
     return (
         <div id="top" className="h-[100vh] relative lg:z-10 z-10">
-            <div className="text grid lg:flex justify-center lg:justify-between gap-10 md:gap-1 pt-20 items-center h-screen w-full lg:w-[60vw] mx-auto lg:pt-10">
+            <div className="text grid lg:flex justify-center lg:justify-between gap-10 md:gap-1 pt-20 items-center h-screen w-full lg:w-[70vw] mx-auto lg:pt-10">
                 <div className="lg:w-[46%] lg:flex lg:flex-col text-center lg:text-start grid gap-4 ">
                     <p className="text-xl md:text-3xl lg:text-2xl text-custom-green uppercase font-semibold ">hello i'm</p>
                     <p className="text-[42px] md:text-[70px] text-white font-bold lg:text-[5vw]">Pabitra Mohanty</p>
