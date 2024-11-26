@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import chatifyImage from "../assets/chatify.png";
 import cryptoImage from "../assets/crypto.png";
-import ecommerceImage from "../assets/ecommerce.png";
+import ecommerceImage from "../assets/Ecommerce.png";
 
 export const ProjectsHover = () => {
   return (

@@ -1,6 +1,4 @@
 import React from 'react'
-import { FaFacebook } from "react-icons/fa6";
-import { LuInstagram } from "react-icons/lu";
 
 const Footer = () => {
   return (
