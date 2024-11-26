@@ -218,12 +218,13 @@ const Contact = () => {
                             }}
                             className='grid col-span-1 md:col-span-2 justify-center md:justify-start items-center'>
 
-                            <input
+                            <button
                                 className='btn btn-outline text-custom-green hover:bg-custom-green font-bold text-lg '
                                 type="submit"
-                                value={isSubmitting ? <span className="loading loading-spinner loading-lg"></span> : "Submit Now"}
                                 disabled={isSubmitting ? true : false}
-                            />
+                            >
+                                {isSubmitting ? <span className="loading loading-spinner loading-lg text-custom-green">"loading"</span> : "Submit Now"}
+                            </button>
 
                         </motion.div>
                     </form>
