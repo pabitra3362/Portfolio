@@ -41,9 +41,7 @@ const Education = () => {
                         </p>
                     </motion.div>
 
-                    <motion.div className="logo h-24 w-24 bg-success text-black outline-8 transition duration-300 flex justify-center items-center border border-t-cyan-400 border-r-custom-green border-b-pink-500 border-l-orange-500 rounded-lg peer-hover:bg-white peer-hover:text-success peer-hover:animate-rotate">
-                        <TbSchool className='h-20 w-20' />
-                    </motion.div>
+                    
                 </motion.div>
             </motion.div>
 

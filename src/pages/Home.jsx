@@ -67,7 +67,7 @@ const Home = () => {
         </div>
           
 
-        <div className="scrollingtext text-black bg-[#e7e4da] py-5 lg:py-10">
+        <div className="scrollingtext text-black bg-[#3ef02e] py-5 lg:py-10">
             <InfineScrollText animate={"animate-scrollLeft"} text={"Junior Website Developer From India * "} />
 
             <InfineScrollText animate={"animate-scrollRight"} text={"Let's Work Together. I Am Open For New Projects * "} />
@@ -118,7 +118,7 @@ const Home = () => {
 
         
         {/* Contact */}
-        <div id="contact" className='contact bg-slate-900'>
+        <div id="contact" className='contact bg-slate-900 py5  lg:py-24'>
           <Contact />
         </div>
 

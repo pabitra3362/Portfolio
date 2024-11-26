@@ -31,7 +31,7 @@ const MyInput = forwardRef( function MyInput(
             type={type} 
             placeholder={placeholder} 
             name={name} 
-            className={`h-12 p-2 bg-white text-black font-bold text-lg ${className}`} 
+            className={`h-12 p-2 bg-white text-black font-bold text-lg ${className} border border-t-cyan-400 border-r-custom-green border-b-pink-500 border-l-orange-500 focus:shadow-cyan focus:outline-none my-2`} 
             ref={ref}
             {...props} 
             />

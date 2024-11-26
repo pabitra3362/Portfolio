@@ -27,7 +27,7 @@ const Textarea = forwardRef(function Textarea({
             <textarea
                 name={name}
                 placeholder={placeholder}
-                className={`h-24 p-2 bg-white text-black font-bold text-lg ${className}`}
+                className={`h-24 p-2 bg-white text-black font-bold text-lg ${className} border border-t-cyan-400 border-r-custom-green border-b-pink-500 border-l-orange-500 focus:shadow-cyan focus:outline-none my-2`}
                 {...props}
                 ref={ref}
             ></textarea>
