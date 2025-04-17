@@ -1,20 +1,16 @@
 import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import { FiArrowRight } from "react-icons/fi";
-import chatifyImage from "../assets/chatify.png";
 import cryptoImage from "../assets/crypto.png";
-import ecommerceImage from "../assets/Ecommerce.png";
+import cafetinImage from '../assets/cafetin.png';
+import safarImage from '../assets/safar.png';
+
 
 export const ProjectsHover = () => {
   return (
     <section className="bg-neutral-950 p-4 md:p-8 w-80 md:w-full rounded-lg">
       <div className="mx-auto max-w-5xl">
-        <Link
-          heading="Chatify"
-          subheading="A Group Chat Application"
-          imgSrc={chatifyImage}
-          href="https://pabi.netlify.app"
-        />
+        
         <Link
           heading="Crypto-Checker"
           subheading="Crypto Currency Checker"
@@ -22,11 +18,19 @@ export const ProjectsHover = () => {
           href="https://pabi2.netlify.app/"
         />
         <Link
-          heading="E-commerce"
-          subheading="A Project To Check Backend Skills"
-          imgSrc={ecommerceImage}
-          href="https://pabi3.netlify.app/"
+          heading="Cafetin"
+          subheading="Coffee Shop Website"
+          imgSrc={cafetinImage}
+          href="https://cafelin.vercel.app"
         />
+        <Link
+          heading="Safar"
+          subheading="Public-Transportation Website Related To Uber, Rapido, Ola"
+          imgSrc={safarImage}
+          href="https://public-transportation.vercel.app"
+        />
+
+        
         
       </div>
     </section>

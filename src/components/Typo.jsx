@@ -7,7 +7,7 @@ const Typo = () => {
 
     return (
         
-            <span id='typewriter' className='  font-bold text-custom-green text-2xl my-2 md:text-5xl lg:text-4xl lg:mt-3'><Typewriter
+            <span id='typewriter' className='  font-bold text-custom-green whitespace-nowrap text-2xl my-2 md:text-5xl lg:text-4xl lg:mt-3'><Typewriter
                 words={typeArray}
                 loop={Infinity}
                 cursor

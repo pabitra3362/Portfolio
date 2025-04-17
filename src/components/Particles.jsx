@@ -106,7 +106,7 @@ const ParticlesComponent = (props) => {
                     <p className="text-xl md:text-3xl lg:text-2xl text-custom-green uppercase font-semibold ">hello i'm</p>
                     <p className="text-[42px] md:text-[70px] text-white font-bold lg:text-[5vw]">Pabitra Mohanty</p>
                     <div className="grid gap-4 lg:flex lg:gap-3 justify-center lg:justify-start items-center ">
-                    <p className="text-3xl md:text-5xl lg:text-2xl text-white font-bold">A Passionate</p>
+                    <p className="text-3xl md:text-5xl lg:text-2xl text-white whitespace-nowrap font-bold">A Passionate</p>
                     <div><Typo /></div>
                     </div>
                     <div className="  lg:z-50">
