@@ -4,6 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 import cryptoImage from "../assets/crypto.png";
 import cafetinImage from '../assets/cafetin.png';
 import safarImage from '../assets/safar.png';
+import shayarspotImage from '../assets/shayarspot.png';
 
 
 export const ProjectsHover = () => {
@@ -28,6 +29,12 @@ export const ProjectsHover = () => {
           subheading="Public-Transportation Website Related To Uber, Rapido, Ola"
           imgSrc={safarImage}
           href="https://public-transportation.vercel.app"
+        />
+        <Link
+          heading="ShayarSpot"
+          subheading="Shayari website with AI integration for auto content generation"
+          imgSrc={shayarspotImage}
+          href="https://shayarspot.vercel.app"
         />
 
         

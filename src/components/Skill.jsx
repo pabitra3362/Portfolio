@@ -31,7 +31,7 @@ const Skill = () => {
         </p>
 
       </motion.div>
-      <motion.div className="circles grid grid-cols-1 md:grid-cols-3 justify-center items-center"
+      <motion.div className="circles grid grid-cols-2 md:grid-cols-3 justify-center items-center"
       whileInView={{
         translateY:[100,-20,0],
         opacity:[0,1]
@@ -71,8 +71,24 @@ const Skill = () => {
           <p className='text-center text-lg text-white font-bold'>.NET</p>
         </motion.div>
         <motion.div className="reactjs grid justify-center items-center hover:scale-110 duration-200">
-          <Circle percentage={75} />
-          <p className='text-center text-lg text-white font-bold'>Python</p>
+          <Circle percentage={85} />
+          <p className='text-center text-lg text-white font-bold'>Java</p>
+        </motion.div>
+        <motion.div className="reactjs grid justify-center items-center hover:scale-110 duration-200">
+          <Circle percentage={85} />
+          <p className='text-center text-lg text-white font-bold'>Spring Boot</p>
+        </motion.div>
+        <motion.div className="reactjs grid justify-center items-center hover:scale-110 duration-200">
+          <Circle percentage={90} />
+          <p className='text-center text-lg text-white font-bold'>Next Js</p>
+        </motion.div>
+        <motion.div className="reactjs grid justify-center items-center hover:scale-110 duration-200">
+          <Circle percentage={80} />
+          <p className='text-center text-lg text-white font-bold'>PostgreSql</p>
+        </motion.div>
+        <motion.div className="reactjs grid justify-center items-center hover:scale-110 duration-200">
+          <Circle percentage={90} />
+          <p className='text-center text-lg text-white font-bold'>MySql</p>
         </motion.div>
         
       </motion.div>

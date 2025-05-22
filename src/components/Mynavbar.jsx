@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom'
-import resume from '../assets/resume-1.pdf'
+import resume from '../assets/unstop_resume.pdf';
 function Mynavbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -87,7 +87,7 @@ function Mynavbar() {
                                 </div>
                             ))}
                             <div>
-                                <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold"><a href={resume} download="resume1.pdf">Download CV</a></button>
+                                <button className="btn btn-outline text-custom-green hover:bg-custom-green font-bold"><a href={resume} download="resume.pdf">Download CV</a></button>
                             </div>
 
 
